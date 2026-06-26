@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>prisha-OS — Prisha Raj</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Boot screen -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-box">
+      <div class="boot-title">prisha-os <span class="boot-version">v2.6</span></div>
+      <div id="boot-log" class="boot-log" aria-live="polite"></div>
+      <div class="boot-cursor">▌</div>
+    </div>
+  </div>
+
+  <!-- Top menu bar -->
+  <div class="menubar">
+    <div class="menubar-left">
+      <span class="menubar-logo">◆ prisha-os</span>
+      <span class="menubar-item">File</span>
+      <span class="menubar-item">View</span>
+      <span class="menubar-item">Vibes ✨</span>
+    </div>
+    <div class="menubar-right">
+      <span class="menubar-battery">🔋 portfolio: 100%</span>
+      <span id="clock" class="menubar-clock">--:--</span>
+    </div>
+  </div>
+
+  <!-- Desktop area -->
+  <main id="desktop" class="desktop">
+
+    <div class="wallpaper-deco" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div id="wallpaper-badge" class="wallpaper-badge" title="click me!">
+      <span class="badge-text">PRISHA RAJ</span>
+      <span class="badge-sub">click for confetti 🎉</span>
+    </div>
+
+    <!-- Desktop icons -->
+    <div class="icon-grid">
+      <button class="desktop-icon" data-icon-static="about" type="button">
+        <span class="icon-glyph">🙋‍♀️</span>
+        <span class="icon-label">about-me.txt</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-project="syncsketch" type="button">
+        <span class="icon-glyph">🎨</span>
+        <span class="icon-label">SyncSketch.app</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-project="pension-ms" type="button">
+        <span class="icon-glyph">🏦</span>
+        <span class="icon-label">PensionMS.app</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-project="gridlock" type="button">
+        <span class="icon-glyph">🚦</span>
+        <span class="icon-label">Gridlock.ipynb</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-static="skills" type="button">
+        <span class="icon-glyph">🧩</span>
+        <span class="icon-label">skills.json</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-static="oss" type="button">
+        <span class="icon-glyph">🌱</span>
+        <span class="icon-label">open-source.log</span>
+      </button>
+
+      <button class="desktop-icon" data-icon-static="contact" type="button">
+        <span class="icon-glyph">📮</span>
+        <span class="icon-label">contact.app</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Dock -->
+  <nav class="dock" aria-label="Quick launch dock">
+    <button class="dock-item" data-dock="about" type="button" title="About"><span>🙋‍♀️</span></button>
+    <button class="dock-item" data-dock="syncsketch" type="button" title="SyncSketch"><span>🎨</span></button>
+    <button class="dock-item" data-dock="pension-ms" type="button" title="Pension MS"><span>🏦</span></button>
+    <button class="dock-item" data-dock="gridlock" type="button" title="Gridlock"><span>🚦</span></button>
+    <button class="dock-item" data-dock="skills" type="button" title="Skills"><span>🧩</span></button>
+    <button class="dock-item" data-dock="oss" type="button" title="Open Source"><span>🌱</span></button>
+    <button class="dock-item" data-dock="contact" type="button" title="Contact"><span>📮</span></button>
+  </nav>
+
+  <script src="confetti.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
